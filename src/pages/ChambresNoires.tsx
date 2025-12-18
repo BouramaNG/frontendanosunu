@@ -335,7 +335,7 @@ export default function ChambresNoires() {
                         <h3 className="text-xl font-bold text-white mb-1">{type.name}</h3>
                         {type.badge && (
                           <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-purple-500/30 to-pink-500/30 border border-purple-400/50 rounded-full text-xs font-semibold text-purple-200">
-                            <Sparkle className="w-3 h-3" />
+                            <Sparkles className="w-3 h-3" />
                             {type.badge}
                   </span>
                 )}
