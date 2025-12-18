@@ -1,0 +1,55 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1f2937;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111827;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="messageGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#db2777;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded background -->
+  <rect width="512" height="512" fill="url(#bgGradient)" rx="100"/>
+
+  <!-- Message bubble emoji style -->
+  <g transform="translate(256, 200)">
+    <!-- Main bubble -->
+    <ellipse cx="0" cy="0" rx="110" ry="100" fill="url(#messageGradient)"/>
+
+    <!-- Bubble tail -->
+    <path d="M -70 60 Q -85 80 -95 95 Q -85 85 -70 75 Z" fill="url(#messageGradient)"/>
+
+    <!-- Three dots inside bubble (representing conversation) -->
+    <circle cx="-35" cy="0" r="12" fill="#1f2937" opacity="0.7"/>
+    <circle cx="0" cy="0" r="12" fill="#1f2937" opacity="0.7"/>
+    <circle cx="35" cy="0" r="12" fill="#1f2937" opacity="0.7"/>
+
+    <!-- Shine effect -->
+    <ellipse cx="-30" cy="-40" rx="40" ry="30" fill="white" opacity="0.15"/>
+  </g>
+
+  <!-- Text: AnoSUNU -->
+  <text x="256" y="340"
+        font-family="Arial, sans-serif"
+        font-size="56"
+        font-weight="bold"
+        fill="#ec4899"
+        text-anchor="middle">AnoSUNU</text>
+
+  <!-- Slogan -->
+  <text x="256" y="385"
+        font-family="Arial, sans-serif"
+        font-size="22"
+        font-weight="normal"
+        fill="#9ca3af"
+        text-anchor="middle">Exprimez-vous librement</text>
+
+  <!-- Decorative elements -->
+  <circle cx="100" cy="450" r="8" fill="#ec4899" opacity="0.3"/>
+  <circle cx="412" cy="450" r="8" fill="#ec4899" opacity="0.3"/>
+  <circle cx="80" cy="100" r="6" fill="#ec4899" opacity="0.25"/>
+  <circle cx="432" cy="120" r="6" fill="#ec4899" opacity="0.25"/>
+</svg>
