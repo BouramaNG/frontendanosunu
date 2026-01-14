@@ -1,7 +1,16 @@
 import { useState, useEffect } from 'react';
 import { Shield, Check, Clock, Users, AlertTriangle, Award, ChevronDown, Calendar, Globe } from '@/lib/icons';
+import { useSEO } from '../hooks/useSEO';
 
 export default function DevenirModerateur() {
+  // SEO Optimization
+  useSEO({
+    title: 'Devenir Modérateur AnoSUNU | Rejoins l\'équipe',
+    description: 'Candidatez pour devenir modérateur chez AnoSUNU. Contribuez à une communauté libre et sécurisée. Avantages, prérequis et processus de candidature.',
+    keywords: 'devenir modérateur, moderateur anosunu, moderateur senegal, opportunite travail, benevolat',
+    canonicalUrl: 'https://anosunu.com/devenir-moderateur'
+  });
+  
   const [formData, setFormData] = useState({
     nom: '',
     disponibilite: '',

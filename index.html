@@ -5,16 +5,90 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- PWA Meta Tags -->
+    <!-- SEO: Primary Meta Tags -->
+    <title>AnoSUNU - Plateforme Anonyme Sénégal | Parlez Librement</title>
+    <meta name="description" content="AnoSUNU: Forum anonyme gratuit au Sénégal. Débattez librement sur politique, psychologie, sexualité, tabous, violences. Communauté sécurisée et respectueuse." />
+    <meta name="keywords" content="ano, anosunu, plateforme anonyme senegal, forum libre, débat politique, psychologie, sexualité, tabous senegal, violence femmes, moeurs" />
+    <meta name="author" content="AnoSUNU Team" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="theme-color" content="#ec4899" />
-    <meta name="description" content="Plateforme sociale anonyme avec chambres noires et feed" />
+    <link rel="canonical" href="https://anosunu.com/" />
+
+    <!-- SEO: Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://anosunu.com" />
+    <meta property="og:title" content="AnoSUNU - Plateforme Anonyme Sénégal | Parlez Librement" />
+    <meta property="og:description" content="Forum anonyme gratuit pour débattre librement: politique, psychologie, sexualité, tabous. Sénégal. Communauté sécurisée 100% anonyme." />
+    <meta property="og:image" content="https://anosunu.com/logo.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="AnoSUNU" />
+    <meta property="og:locale" content="fr_SN" />
+
+    <!-- SEO: Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://anosunu.com" />
+    <meta name="twitter:title" content="AnoSUNU - Plateforme Anonyme Sénégal | Parlez Librement" />
+    <meta name="twitter:description" content="Forum anonyme gratuit pour débattre librement: politique, psychologie, sexualité, tabous. Sénégal." />
+    <meta name="twitter:image" content="https://anosunu.com/logo.svg" />
+
+    <!-- SEO: JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AnoSUNU",
+      "url": "https://anosunu.com",
+      "logo": "https://anosunu.com/logo.svg",
+      "description": "Plateforme anonyme pour la libre expression. Débattez sur politique, psychologie, santé mentale, sexualité, tabous au Sénégal.",
+      "sameAs": [
+        "https://twitter.com/anosunu",
+        "https://facebook.com/anosunu",
+        "https://instagram.com/anosunu"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "email": "support@anosunu.com"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "SN"
+      },
+      "inLanguage": "fr"
+    }
+    </script>
+
+    <!-- SEO: Additional Structured Data - WebSite Schema for Search Box -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://anosunu.com",
+      "name": "AnoSUNU",
+      "description": "Plateforme anonyme pour débattre librement au Sénégal",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://anosunu.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- PWA Meta Tags -->
     <link rel="apple-touch-icon" href="/pwa-192x192.png" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Anosunu" />
 
-    <title>Anosunu - Plateforme Anonyme</title>
+    <!-- Performance & Security -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://backend-anosunu.esimwawtelecom.com" />
   </head>
   <body>
     <div id="root"></div>

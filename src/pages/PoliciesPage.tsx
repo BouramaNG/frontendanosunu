@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Shield, Lock, Scale, FileText, AlertCircle, HelpCircle } from '@/lib/icons';
+import { useSEO } from '../hooks/useSEO';
 
 interface PolicyTab {
   id: string;
@@ -10,6 +11,14 @@ interface PolicyTab {
 }
 
 export default function PoliciesPage() {
+  // SEO Optimization
+  useSEO({
+    title: 'Politiques & Juridique | AnoSUNU - Transparence Totale',
+    description: 'Nos politiques de confidentialité, conditions d\'utilisation, modération et protection des données. Garanties GDPR, apolitisme, transparence.',
+    keywords: 'politique confidentialité, conditions utilisation, GDPR, moderation, apolitisme, juridique anosunu',
+    canonicalUrl: 'https://anosunu.com/policies'
+  });
+  
   const [expandedTab, setExpandedTab] = useState<string>('confidentiality');
 
   const policies: PolicyTab[] = [

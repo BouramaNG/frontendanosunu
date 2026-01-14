@@ -4,6 +4,7 @@ import { Lock, Shield, Users, Loader2, MessageCircle, TrendingUp, ArrowRight, Sp
 import WelcomeHomeModal from '../components/WelcomeHomeModal';
 import LoginRequiredModal from '../components/LoginRequiredModal';
 import { useAuthStore } from '../store/authStore';
+import { useSEO } from '../hooks/useSEO';
 import api from '../lib/api';
 
 interface TopicSummary {
@@ -36,6 +37,14 @@ interface CommunityStats {
 export default function Home() {
   const { user, isAuthenticated } = useAuthStore();
   const navigate = useNavigate();
+  
+  // SEO Optimization
+  useSEO({
+    title: 'AnoSUNU - Plateforme Anonyme Sénégal | Parlez Librement',
+    description: 'AnoSUNU: Forum anonyme gratuit au Sénégal. Débattez librement sur politique, psychologie, sexualité, tabous, violences. Communauté sécurisée et respectueuse.',
+    keywords: 'ano, anosunu, plateforme anonyme senegal, forum libre, débat politique, psychologie, sexualité, tabous senegal, violence femmes',
+    canonicalUrl: 'https://anosunu.com/'
+  });
   
   const [showWelcomeModal, setShowWelcomeModal] = useState(true);
   const [topics, setTopics] = useState<TopicSummary[]>([]);

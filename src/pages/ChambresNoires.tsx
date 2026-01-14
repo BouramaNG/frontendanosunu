@@ -4,6 +4,7 @@ import {
   Lock, Star, Users, Heart, Brain, MessageCircle, Sparkles, Shield, TrendingUp,
   Zap, Crown, Eye, CheckCircle2, ArrowRight, Clock, Globe, Key, X
 } from '@/lib/icons';
+import { useSEO } from '../hooks/useSEO';
 import type { BlackRoomType, BlackRoomSubscription } from '../types';
 import api from '../lib/api';
 import { useAuthStore } from '../store/authStore';
@@ -77,6 +78,15 @@ const getRoomDescription = (type: BlackRoomType): string => {
 export default function ChambresNoires() {
   const { user } = useAuthStore();
   const navigate = useNavigate();
+  
+  // SEO Optimization
+  useSEO({
+    title: 'Chambres Noires | Politique, Santé, Tabous | AnoSUNU',
+    description: 'Discussions anonymes sécurisées. Politique, sexualité, violence, psychologie, confessions. Chambres publiques et privées. Rejoignez la communauté.',
+    keywords: 'chambres noires, politique senegal, psychologie, sexualité, violence femmes, tabous, confessions, moeurs',
+    canonicalUrl: 'https://anosunu.com/chambres-noires'
+  });
+  
   const [types, setTypes] = useState<BlackRoomType[]>([]);
   const [subscriptions, setSubscriptions] = useState<BlackRoomSubscription[]>([]);
   const [loading, setLoading] = useState(true);
