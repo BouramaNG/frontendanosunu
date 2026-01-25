@@ -627,6 +627,16 @@ export default function Layout({ children }: LayoutProps) {
                 </>
               ) : (
                 <>
+                  {/* Lien public vers le feed pour lecture sans compte */}
+                  <Link
+                    to="/feed"
+                    className="text-white/80 hover:text-white transition font-medium flex items-center gap-2"
+                  >
+                    <span>🗣️</span>
+                    <span>Espace Libre</span>
+                    <span className="px-1.5 py-0.5 bg-green-500/20 border border-green-500/40 rounded-full text-[9px] text-green-300 font-semibold">PUBLIC</span>
+                  </Link>
+
                   <Link
                     to="/login"
                     className="px-4 py-2 text-sm font-medium text-white/80 hover:text-white bg-white/10 hover:bg-white/20 rounded-lg transition backdrop-blur-sm border border-white/20"

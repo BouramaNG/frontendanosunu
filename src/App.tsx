@@ -132,13 +132,7 @@ function App() {
               <Route path="/policies" element={<PoliciesPage />} />
               <Route
                 path="/feed"
-                element={
-                  <ProtectedRoute>
-                    <OnboardingWrapper>
-                      <FeedNew />
-                    </OnboardingWrapper>
-                  </ProtectedRoute>
-                }
+                element={<FeedNew />}
               />
             <Route
               path="/followers"

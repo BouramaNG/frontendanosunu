@@ -394,11 +394,8 @@ export default function Home() {
                     <button
                       key={topic.id}
                       onClick={() => {
-                        if (!isAuthenticated) {
-                          setShowLoginModal(true);
-                        } else {
-                          navigate(`/feed?category=${topic.slug}`);
-                        }
+                        // Autoriser la navigation vers le feed public pour les invités
+                        navigate(`/feed?category=${topic.slug}`);
                       }}
                       className="bg-gradient-to-br from-white/10 to-white/5 border border-white/20 rounded-2xl p-6 hover:from-white/15 hover:to-white/10 transition group text-left"
                     >
