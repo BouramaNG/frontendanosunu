@@ -16,7 +16,7 @@ export default function PoliciesPage() {
     title: 'Politiques & Juridique | AnoSUNU - Transparence Totale',
     description: 'Nos politiques de confidentialité, conditions d\'utilisation, modération et protection des données. Garanties GDPR, apolitisme, transparence.',
     keywords: 'politique confidentialité, conditions utilisation, GDPR, moderation, apolitisme, juridique anosunu',
-    canonicalUrl: 'https://anosunu.com/policies'
+    canonicalUrl: 'https://www.anosunu.com/policies'
   });
   
   const [expandedTab, setExpandedTab] = useState<string>('confidentiality');

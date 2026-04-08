@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { User, Lock, Shuffle, AlertCircle, Sparkles, ArrowRight, X, Eye, EyeOff } from '@/lib/icons';
 import { useAuthStore } from '../store/authStore';
 import WelcomeModal from '../components/WelcomeModal';
+import { useSEO } from '../hooks/useSEO';
 
 // Générateur de nom d'utilisateur anonyme
 const generateAnonymousUsername = (): string => {
@@ -17,6 +18,12 @@ const generateAnonymousUsername = (): string => {
 };
 
 export default function Register() {
+  useSEO({
+    title: 'Inscription | AnoSUNU - Rejoindre Ano Sénégal',
+    description: 'Créez votre compte anonyme sur AnoSUNU et rejoignez la communauté sénégalaise.',
+    canonicalUrl: 'https://www.anosunu.com/register',
+  });
+
   const [formData, setFormData] = useState({
     username: '', // Stocke seulement la partie personnalisée (sans "ano_")
     password: '',

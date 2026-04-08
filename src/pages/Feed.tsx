@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import type { Post, Topic, User, Comment } from '../types';
+import { useSEO } from '../hooks/useSEO';
 import api from '../lib/api';
 import AvatarSelector from '../components/AvatarSelector';
 import MediaSelector from '../components/MediaSelector';
@@ -85,6 +86,12 @@ const formatRelativeTime = (dateString: string) => {
 };
 
 export default function Feed() {
+  useSEO({
+    title: 'Feed | AnoSUNU - Ano Sénégal',
+    description: 'Découvrez les dernières publications anonymes de la communauté sénégalaise sur AnoSUNU.',
+    canonicalUrl: 'https://www.anosunu.com/feed',
+  });
+
   const [posts, setPosts] = useState<Post[]>([]);
   const [topics, setTopics] = useState<Topic[]>([]);
   const [selectedTopic, setSelectedTopic] = useState<string>('tous');

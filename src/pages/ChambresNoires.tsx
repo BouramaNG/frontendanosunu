@@ -84,7 +84,7 @@ export default function ChambresNoires() {
     title: 'Chambres Noires | Politique, Santé, Tabous | AnoSUNU',
     description: 'Discussions anonymes sécurisées. Politique, sexualité, violence, psychologie, confessions. Chambres publiques et privées. Rejoignez la communauté.',
     keywords: 'chambres noires, politique senegal, psychologie, sexualité, violence femmes, tabous, confessions, moeurs',
-    canonicalUrl: 'https://anosunu.com/chambres-noires'
+    canonicalUrl: 'https://www.anosunu.com/chambres-noires'
   });
   
   const [types, setTypes] = useState<BlackRoomType[]>([]);

@@ -4,6 +4,7 @@ import { User, Lock, AlertCircle } from '@/lib/icons';
 import { useAuthStore } from '../store/authStore';
 import LoginSuccessModal from '../components/LoginSuccessModal';
 import KeychainLoginModal from '../components/KeychainLoginModal';
+import { useSEO } from '../hooks/useSEO';
 
 export default function Login() {
   const [username, setUsername] = useState('');
@@ -14,6 +15,12 @@ export default function Login() {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [loginUser, setLoginUser] = useState<{username: string, avatar: string, role?: string} | null>(null);
   const [showKeychainLogin, setShowKeychainLogin] = useState(false);
+
+  useSEO({
+    title: 'Connexion | AnoSUNU - Ano Sénégal',
+    description: 'Connectez-vous à AnoSUNU, la plateforme anonyme sénégalaise.',
+    canonicalUrl: 'https://www.anosunu.com/login',
+  });
 
   const { login } = useAuthStore();
   const navigate = useNavigate();

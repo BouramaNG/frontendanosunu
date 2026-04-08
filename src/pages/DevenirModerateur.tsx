@@ -8,7 +8,7 @@ export default function DevenirModerateur() {
     title: 'Devenir Modérateur AnoSUNU | Rejoins l\'équipe',
     description: 'Candidatez pour devenir modérateur chez AnoSUNU. Contribuez à une communauté libre et sécurisée. Avantages, prérequis et processus de candidature.',
     keywords: 'devenir modérateur, moderateur anosunu, moderateur senegal, opportunite travail, benevolat',
-    canonicalUrl: 'https://anosunu.com/devenir-moderateur'
+    canonicalUrl: 'https://www.anosunu.com/devenir-moderateur'
   });
   
   const [formData, setFormData] = useState({
