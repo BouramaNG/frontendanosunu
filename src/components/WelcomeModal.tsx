@@ -1,4 +1,3 @@
-import React from 'react';
 import { CheckCircle, Heart, Shield, Zap } from '@/lib/icons';
 
 interface WelcomeModalProps {

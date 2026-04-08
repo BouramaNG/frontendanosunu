@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Shield, Eye, Heart, Users, Star, CheckCircle } from '@/lib/icons';
+import { useState, useEffect } from 'react';
+import { Shield, Eye, Heart, Users, CheckCircle } from '@/lib/icons';
 
 interface WelcomeHomeModalProps {
   isOpen: boolean;

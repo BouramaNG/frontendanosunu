@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Topic, User } from '../../types';
-import { Plus, Flame, Home, Clock, Shield, Lock, Sparkles } from '@/lib/icons';
+import { Plus, Flame, Clock, Shield, Lock, Sparkles } from '@/lib/icons';
 
 export interface SidebarProps {
   topics: Topic[];

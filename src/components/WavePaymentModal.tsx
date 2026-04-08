@@ -51,7 +51,7 @@ export default function WavePaymentModal({
 
   // Poll for payment status when in waiting step
   useEffect(() => {
-    let interval: NodeJS.Timeout;
+    let interval: ReturnType<typeof setInterval>;
     
     if (step === 'waiting' && paymentData.payment_code) {
       interval = setInterval(async () => {

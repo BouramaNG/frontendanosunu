@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Shield, Check, X, Clock, User, Calendar, Globe, Eye, MessageCircle } from '@/lib/icons';
+import { useState, useEffect } from 'react';
+import { Shield, Check, X, Clock, User, MessageCircle } from '@/lib/icons';
 
 interface ModeratorRequest {
   id: number;

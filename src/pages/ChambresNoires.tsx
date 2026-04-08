@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
-  Lock, Star, Users, Heart, Sparkles, Shield,
+  Lock, Users, Sparkles, Shield,
   Zap, Crown, Eye, CheckCircle2, ArrowRight, Globe, Key, X
 } from '@/lib/icons';
 import { useSEO } from '../hooks/useSEO';
