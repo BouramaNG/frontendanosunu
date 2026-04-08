@@ -1,115 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
-  <!-- Homepage - Highest priority -->
+
+  <!-- Homepage -->
   <url>
-    <loc>https://anosunu.com</loc>
-    <lastmod>2026-01-14</lastmod>
+    <loc>https://www.anosunu.com/</loc>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Main Chambers Page -->
+  <!-- Feed -->
   <url>
-    <loc>https://anosunu.com/chambres-noires</loc>
-    <lastmod>2026-01-14</lastmod>
+    <loc>https://www.anosunu.com/feed</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Chambres Noires -->
+  <url>
+    <loc>https://www.anosunu.com/chambres-noires</loc>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
 
-  <!-- Individual Chamber Pages -->
+  <!-- Chambres par catégorie -->
   <url>
-    <loc>https://anosunu.com/chambres-noires/politique</loc>
-    <lastmod>2026-01-14</lastmod>
+    <loc>https://www.anosunu.com/chambres-noires/politique</loc>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://anosunu.com/chambres-noires/psychologie</loc>
-    <lastmod>2026-01-14</lastmod>
+    <loc>https://www.anosunu.com/chambres-noires/aveux</loc>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://anosunu.com/chambres-noires/sexualite</loc>
-    <lastmod>2026-01-14</lastmod>
+    <loc>https://www.anosunu.com/chambres-noires/tabous</loc>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://anosunu.com/chambres-noires/violence-femmes</loc>
-    <lastmod>2026-01-14</lastmod>
+    <loc>https://www.anosunu.com/chambres-noires/secrets</loc>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://anosunu.com/chambres-noires/moeurs</loc>
-    <lastmod>2026-01-14</lastmod>
+    <loc>https://www.anosunu.com/chambres-noires/psychologie</loc>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://anosunu.com/chambres-noires/secrets</loc>
-    <lastmod>2026-01-14</lastmod>
+    <loc>https://www.anosunu.com/chambres-noires/sexualite</loc>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://anosunu.com/chambres-noires/sante</loc>
-    <lastmod>2026-01-14</lastmod>
+    <loc>https://www.anosunu.com/chambres-noires/relations</loc>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://anosunu.com/chambres-noires/relations</loc>
-    <lastmod>2026-01-14</lastmod>
+    <loc>https://www.anosunu.com/chambres-noires/sante</loc>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Moderation & Management -->
   <url>
-    <loc>https://anosunu.com/devenir-moderateur</loc>
-    <lastmod>2026-01-14</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.anosunu.com/chambres-noires/violence-femmes</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.anosunu.com/chambres-noires/moeurs</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Auth -->
+  <url>
+    <loc>https://www.anosunu.com/register</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Policies & Legal -->
   <url>
-    <loc>https://anosunu.com/policies</loc>
-    <lastmod>2026-01-14</lastmod>
+    <loc>https://www.anosunu.com/login</loc>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
-  <!-- Feed (dynamic content) -->
+  <!-- Pages légales -->
   <url>
-    <loc>https://anosunu.com/feed</loc>
-    <lastmod>2026-01-14</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- Auth Pages (Medium priority for SEO discoverability) -->
-  <url>
-    <loc>https://anosunu.com/login</loc>
-    <lastmod>2026-01-14</lastmod>
+    <loc>https://www.anosunu.com/policies</loc>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://anosunu.com/register</loc>
-    <lastmod>2026-01-14</lastmod>
+    <loc>https://www.anosunu.com/devenir-moderateur</loc>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

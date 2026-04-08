@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://anosunu.com/sitemap.xml
+Sitemap: https://www.anosunu.com/sitemap.xml
 
 # Crawl delays
 Crawl-delay: 1

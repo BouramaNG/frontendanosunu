@@ -40,10 +40,10 @@ export default function Home() {
   
   // SEO Optimization
   useSEO({
-    title: 'AnoSUNU - Plateforme Anonyme Sénégal | Parlez Librement',
-    description: 'AnoSUNU: Forum anonyme gratuit au Sénégal. Débattez librement sur politique, psychologie, sexualité, tabous, violences. Communauté sécurisée et respectueuse.',
-    keywords: 'ano, anosunu, plateforme anonyme senegal, forum libre, débat politique, psychologie, sexualité, tabous senegal, violence femmes',
-    canonicalUrl: 'https://anosunu.com/'
+    title: 'Ano Sénégal - Plateforme Anonyme | Aveux, Tabous, Secrets | AnoSUNU',
+    description: 'Ano Sénégal - La plateforme anonyme pour partager vos histoires, pensées et expériences au Sénégal en toute sécurité. Rejoignez la communauté sénégalaise.',
+    keywords: 'ano, ano sénégal, anosunu, aveux sénégal, tabou sénégal, secrets sénégal, plateforme anonyme senegal, forum anonyme dakar, confessions sénégal, parler librement sénégal, politique sénégal, relations amoureuses sénégal, psychologie sénégal, sexualité sénégal',
+    canonicalUrl: 'https://www.anosunu.com/'
   });
   
   const [showWelcomeModal, setShowWelcomeModal] = useState(true);
