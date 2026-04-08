@@ -780,7 +780,6 @@ export default function BlackRoomChat({ blackRoom }: BlackRoomChatProps) {
         {messages.map((m, idx) => {
           const isMine = !!(user && Number(m.user_id) === Number(user.id));
           const displayName = isMine ? 'Moi' : (m.user?.name || 'Anonyme');
-          const avatarUrl = m.user?.avatar_url || '';
           const prev = idx > 0 ? messages[idx - 1] : undefined;
           const next = idx < messages.length - 1 ? messages[idx + 1] : undefined;
           const prevDelta = prev ? (new Date(m.created_at).getTime() - new Date(prev.created_at).getTime())/1000 : Infinity;

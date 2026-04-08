@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { X, Sparkles } from '@/lib/icons';
+import { Sparkles } from '@/lib/icons';
 import type { Topic } from '../types';
 import api from '../lib/api';
 

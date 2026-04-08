@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Smile, Image, Palette } from '@/lib/icons';
+import { Smile, Palette } from '@/lib/icons';
 
 interface AvatarSelectorProps {
   selectedAvatar: {

@@ -36,7 +36,7 @@ export default function PostForm({
   onContentChange,
   selectedImages,
   onImagesChange,
-  selectedVideos = [],
+  selectedVideos: _selectedVideos = [],
   onVideosChange,
   previewVideoUrls = [],
   onRemoveVideo,

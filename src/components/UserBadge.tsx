@@ -6,7 +6,8 @@ interface UserBadgeProps {
   className?: string;
 }
 
-type BadgeType = 'red' | 'yellow' | 'green' | null;
+type BadgeType = 'red' | 'yellow' | 'green';
+type NullableBadgeType = BadgeType | null;
 
 /**
  * Calcule le type de badge selon les critères :
@@ -14,7 +15,7 @@ type BadgeType = 'red' | 'yellow' | 'green' | null;
  * - Jaune : posts entre 100-300 likes ET plus de 10 publications
  * - Vert : posts avec plus de 500 likes ET qui publient souvent
  */
-function calculateBadgeType(user: User): BadgeType {
+function calculateBadgeType(user: User): NullableBadgeType {
   // Si l'utilisateur est modérateur ou admin, pas de badge de niveau
   if (user.role !== 'user') {
     return null;
@@ -66,7 +67,7 @@ export default function UserBadge({ user, className = '' }: UserBadgeProps) {
     return null;
   }
 
-  const config = BADGE_CONFIG[badgeType];
+  const config = BADGE_CONFIG[badgeType as BadgeType];
 
   return (
     <span

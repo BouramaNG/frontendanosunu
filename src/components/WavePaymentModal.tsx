@@ -35,8 +35,6 @@ export default function WavePaymentModal({
   const [actualAmountPaid, setActualAmountPaid] = useState(''); // NOUVEAU: montant réel payé
   
   // Status polling
-  const [pollingStatus, setPollingStatus] = useState(false);
-
   useEffect(() => {
     // Reset state when modal opens
     if (isOpen) {

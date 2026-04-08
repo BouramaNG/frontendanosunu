@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { CheckCircle, Crown, Star } from '@/lib/icons';
 
 interface LoginSuccessModalProps {

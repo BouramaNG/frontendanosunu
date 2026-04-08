@@ -5,7 +5,6 @@ import { queryClient } from './lib/queryClient';
 import { useAuthStore } from './store/authStore';
 import { useServiceWorkerUpdate } from './hooks/useServiceWorkerUpdate';
 import Layout from './components/Layout';
-import OnboardingWrapper from './components/OnboardingWrapper';
 import PinReminderModal from './components/PinReminderModal';
 import SetPinModal from './components/SetPinModal';
 

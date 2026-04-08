@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { Image, Sticker, Upload, X, Plus } from '@/lib/icons';
+import { Image, Sticker, Upload, X } from '@/lib/icons';
 
 interface MediaSelectorProps {
   selectedImages: File[];

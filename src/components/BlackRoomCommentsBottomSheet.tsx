@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { X } from '@/lib/icons';
 import type { BlackRoom, BlackRoomPost } from '../types';
 import BlackRoomPostComments from './BlackRoomPostComments';

@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import api from '../lib/api';
 import { useAuthStore } from '../store/authStore';
 import type { User } from '../types';
@@ -15,7 +14,6 @@ export default function KeychainLoginModal({ isOpen, onClose, onSuccess }: Keych
   const [pin, setPin] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-  const navigate = useNavigate();
   const hydrateSession = useAuthStore((state) => state.hydrateSession);
 
   if (!isOpen) {

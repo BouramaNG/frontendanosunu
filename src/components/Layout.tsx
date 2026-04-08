@@ -297,11 +297,6 @@ export default function Layout({ children }: LayoutProps) {
     navigate('/');
   };
 
-  const handleToggleDropdown = () => {
-    setDropdownOpen((prev) => !prev);
-    // Fermer les notifications quand on ouvre le profil
-    setNotificationsOpen(false);
-  };
 
   const handleToggleNotifications = (e?: React.MouseEvent) => {
     if (e) {

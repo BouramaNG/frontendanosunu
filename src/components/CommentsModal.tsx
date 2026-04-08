@@ -30,7 +30,6 @@ export default function CommentsModal({
   commentCount,
   canModerate = false,
   isLoading = false,
-  onReply,
   onDelete,
   onLike,
   onReport,
@@ -55,7 +54,7 @@ export default function CommentsModal({
   const [isRecording, setIsRecording] = useState(false);
   const [recordingDuration, setRecordingDuration] = useState(0);
   const recordingTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const [isSubmittingVoice, setIsSubmittingVoice] = useState(false);
+  const [, setIsSubmittingVoice] = useState(false);
 
   useEffect(() => {
     if (open) {
