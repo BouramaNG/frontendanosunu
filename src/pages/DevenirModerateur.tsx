@@ -24,10 +24,10 @@ export default function DevenirModerateur() {
 
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [showErrorModal, setShowErrorModal] = useState(false);
-  const [errorMessage, setErrorMessage] = useState('');
+  const [_errorMessage, setErrorMessage] = useState('');
 
-  const [userInfo, setUserInfo] = useState<{name: string} | null>(null);
-  const [loading, setLoading] = useState(false);
+  const [_userInfo, setUserInfo] = useState<{name: string} | null>(null);
+  const [_loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchUserInfo = async () => {

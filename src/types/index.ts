@@ -4,6 +4,8 @@ export interface User {
   email: string;
   gender: 'male' | 'female';
   avatar_url: string;
+  avatar_color?: string;
+  avatar_value?: string;
   role: 'user' | 'moderator' | 'admin';
   is_moderator_verified: boolean;
   moderator_badge?: string;

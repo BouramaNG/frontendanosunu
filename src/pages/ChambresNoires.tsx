@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
-  Lock, Star, Users, Heart, Brain, MessageCircle, Sparkles, Shield, TrendingUp,
-  Zap, Crown, Eye, CheckCircle2, ArrowRight, Clock, Globe, Key, X
+  Lock, Star, Users, Heart, Sparkles, Shield,
+  Zap, Crown, Eye, CheckCircle2, ArrowRight, Globe, Key, X
 } from '@/lib/icons';
 import { useSEO } from '../hooks/useSEO';
 import type { BlackRoomType, BlackRoomSubscription } from '../types';

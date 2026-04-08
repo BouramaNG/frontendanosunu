@@ -86,8 +86,8 @@ export function addProtectionOverlay(element: HTMLElement): void {
 // Détecter les tentatives de capture vidéo (partiel)
 export function detectVideoCapture(videoElement: HTMLVideoElement): void {
   // Désactiver les contrôles de téléchargement
-  videoElement.controlsList.add('nodownload');
-  videoElement.controlsList.add('noremoteplayback');
+  (videoElement as any).controlsList?.add('nodownload');
+  (videoElement as any).controlsList?.add('noremoteplayback');
   
   // Empêcher le clic droit
   videoElement.addEventListener('contextmenu', (e) => {

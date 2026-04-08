@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
-import { Lock, Key, ArrowLeft, Users, AlertCircle } from '@/lib/icons';
+import { Lock, Key, ArrowLeft, AlertCircle } from '@/lib/icons';
 import api from '../lib/api';
 import { useAuthStore } from '../store/authStore';
 
@@ -13,7 +13,7 @@ export default function JoinPrivateRoom() {
   const [error, setError] = useState('');
   const [lookupResult, setLookupResult] = useState<null | any>(null);
   const [confirming, setConfirming] = useState(false);
-  const [roomSlug, setRoomSlug] = useState<string | null>(null);
+  const [_roomSlug, setRoomSlug] = useState<string | null>(null);
 
   const link = searchParams.get('link');
 

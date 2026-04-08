@@ -56,7 +56,7 @@ function pickRandomCountry(): string {
   return COUNTRIES[idx];
 }
 
-function scheduleAutoLogoutOrLogoutNow(get: () => AuthState, set: (partial: Partial<AuthState>) => void) {
+function scheduleAutoLogoutOrLogoutNow(get: () => AuthState, _set: (partial: Partial<AuthState>) => void) {
   clearAutoLogoutTimer();
   const loginAtStr = localStorage.getItem('auth_login_at');
   const loginAt = loginAtStr ? parseInt(loginAtStr, 10) : NaN;
@@ -80,14 +80,14 @@ function scheduleAutoLogoutOrLogoutNow(get: () => AuthState, set: (partial: Part
   }, remaining);
 }
 
-function cancelKeychainReminder(get: () => AuthState, set: (partial: Partial<AuthState>) => void) {
+function cancelKeychainReminder(_get: () => AuthState, _set: (partial: Partial<AuthState>) => void) {
   clearKeychainReminderTimer();
   if (typeof window !== 'undefined') {
     try {
       localStorage.removeItem(KEYCHAIN_REMINDER_STORAGE_KEY);
     } catch (_) {}
   }
-  set({ pinReminderVisible: false });
+  _set({ pinReminderVisible: false });
 }
 
 function scheduleKeychainReminder(

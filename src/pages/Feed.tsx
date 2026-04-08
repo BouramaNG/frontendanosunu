@@ -9,10 +9,10 @@ import {
   Heart,
   MessageCircle,
   AlertTriangle,
-  MessageSquareQuote,
+  MessageSquare as MessageSquareQuote,
   Image as ImageIcon,
   Loader2,
-  CornerDownRight,
+  ArrowRight,
   Reply,
   XCircle,
   Trash2,
@@ -625,7 +625,7 @@ export default function Feed() {
                 {comment.user?.gender === 'female' ? '👩' : comment.user?.gender === 'male' ? '👨' : '😶'}
               </div>
               {depth > 0 && (
-                <CornerDownRight className="absolute -left-6 top-2 h-4 w-4 text-white/30" />
+                <ArrowRight className="absolute -left-6 top-2 h-4 w-4 text-white/30" />
               )}
             </div>
             <div className="flex-1">
